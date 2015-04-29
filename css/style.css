@@ -1,76 +1,20 @@
-
-/*
- * Scaffolding and type
- */
-
-html {
-  font-size: 16px;
-  overflow: hidden;
-}
+html {font-size: 16px;overflow: hidden;}
 @media (min-width: 48em) {
   html {
     font-size: 20px;
   }
 }
 
-body {
-  margin: 0;
-  font: 1rem/1.5 "微软雅黑","PT Sans", sans-serif;
-  color: #5a5a5a;
-  overflow: hidden;
-  width: 100%;
-  *cursor: default;
-}
-
-h1, h2, h3, h4 {
-  margin: 0 0 .5rem;
-  font-weight: normal;
-  line-height: 1;
-  color: #2a2a2a;
-  letter-spacing: -.05em;
-}
+body {margin: 0;font: 1rem/1.5 "微软雅黑","PT Sans", sans-serif;color: #5a5a5a;overflow: hidden;width: 100%;*cursor: default;}
+h1, h2, h3, h4 {margin: 0 0 .5rem;font-weight: normal;line-height: 1;color: #2a2a2a;letter-spacing: -.05em;}
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.25rem }
-
-p {
-  margin: 0 0 0.1rem;
-}
-.lead {
-  font-size: 1.3rem;
-}
-
-blockquote {
-  position: relative;
-  margin: 0 1rem 1rem;
-  font-style: italic;
-  color: #7a7a7a;
-}
-blockquote p {
-  margin-bottom: 0;
-}
-
-ul li {
-  margin-bottom: .25rem;
-}
-
-/* Tighten up margin on last items */
-p:last-child,
-ul:last-child,
-blockquote:last-child{
-  margin-bottom: 0;
-}
-
-/*
- * The Grid
- */
-
-.col {
-  /*padding: 2rem 1rem;*/
-  position: relative;
-  transition: background-position .5s;
-}
+p {margin: 0 0 0.1rem;}
+ul li {margin-bottom: .25rem;}
+p:last-child,ul:last-child,blockquote:last-child{margin-bottom: 0;}
+.col {position: relative;transition: background-position .5s;}
 .page1 .col{background: url(../img/wallhaven-82818.jpg);}
 .col:nth-child(1){background-position: 0 0;}
 .col:nth-child(2){background-position: -167px 0;}
@@ -79,14 +23,7 @@ blockquote:last-child{
 .col:nth-child(5){background-position: -812px 0;}
 .col{background: url(../img/wallhaven-12860.jpg);}
 .col-bp{background-position: -130px 0!important;}
-.col p {
-  max-width: 40rem;
-  padding-left: .5em;
-}
-.col + .col {
-  border-top: 1px solid #dfe1e8;
-  background-color: #f7f7f9;
-}
+.col p{max-width: 40rem;padding-left: .5em;}
 @media (min-width: 38em) {
   .col {
     /*padding: 2rem;*/
@@ -98,72 +35,26 @@ blockquote:last-child{
     width: 100%;
     table-layout: fixed;
   }
-  .col {
-    display: table-cell;
-    /*padding: 3rem;*/
-    vertical-align: top;
-  }
-  .col + .col {
-    border-top: 0;
-  }
+.col {display: table-cell;vertical-align: top;}
+.col + .col {border-top: 0;}
 }
 
-/*
- * Masthead
- */
-.wrap {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  height: 100%;
-  background: #ffa800;
-}
+.wrap {display: table;table-layout: fixed;width: 100%;height: 100%;background: #ffa800;}
 .shade{width: 100%;height: inherit;background: rgba(0,0,0,.6);position: absolute;left: 0;top: 0;}/*遮罩*/
 h2{font-size: 1.5rem;color: #fff;}
 p span{font-size: .7rem;display: block;}/*链接说明*/
-
 /*a style*/
-a{
-  font-size: .8rem;
-  color: #08c;
-  position: relative;
-  font-weight: 600;
-  display: inline-block;
-  text-decoration: none;
+a{font-size: .8rem;color: #08c;position: relative;font-weight: 600;display: inline-block;text-decoration: none;
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   transition: all .3s linear;
-   outline:none;blr:expression(this.onFocus=this.blur());
+  outline:none;blr:expression(this.onFocus=this.blur());
 }
-
-a:hover{
-  color: #08c;
-}
-
-a:before, a:after{
-  content: '';
-  background: #e74c3c;
-  position: absolute;
-  width: 0;
-  height: 2px;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
-}
-
-a:before{
-  top: 0;
-  left: 0;
-}
-
-a:after{
-  top: 100%;
-  right: 0;
-}
-
-a:hover:before, a:hover:after{
-  width: 100%;
-}
+a:hover{color: #08c;}
+a:before, a:after{content: '';background: #e74c3c;position: absolute;width: 0;height: 2px;-webkit-transition: all .3s linear;-moz-transition: all .3s linear;transition: all .3s linear;}
+a:before{top: 0;left: 0;}
+a:after{top: 100%;right: 0;}
+a:hover:before, a:hover:after{width: 100%;}
 /*a style end*/
 
 /*fullpage*/
