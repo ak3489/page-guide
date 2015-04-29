@@ -66,12 +66,18 @@ blockquote:last-child{
 .col {
   /*padding: 2rem 1rem;*/
   position: relative;
+  transition: background-position .5s;
 }
 .wrap:nth-child(1) .col:nth-child(1){background: url(../img/wallhaven-82818.jpg);}
+.wrap:nth-child(1) .col:nth-child(1):hover{background-position: -130px 0;}
 .wrap:nth-child(1) .col:nth-child(2){background: url(../img/wallhaven-82818.jpg) -167px 0;}
+.wrap:nth-child(1) .col:nth-child(2):hover{background-position: -130px 0;}
 .wrap:nth-child(1) .col:nth-child(3){background: url(../img/wallhaven-82818.jpg) -260px 0;}
+.wrap:nth-child(1) .col:nth-child(3):hover{background-position: -130px 0;}
 .wrap:nth-child(1) .col:nth-child(4){background: url(../img/wallhaven-82818.jpg) -433px 0;}
+.wrap:nth-child(1) .col:nth-child(4):hover{background-position: -130px 0;}
 .wrap:nth-child(1) .col:nth-child(5){background: url(../img/wallhaven-82818.jpg) -812px 0;}
+.wrap:nth-child(1) .col:nth-child(5):hover{background-position: -130px 0;}
 .col p {
   max-width: 40rem;
   padding-left: .5em;
