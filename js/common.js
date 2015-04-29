@@ -1,6 +1,6 @@
-//var h = $(window).height();
-//$('.wrap').css('height', h);
-//$('.shade').css('height', h);
+var h = $(window).height();
+$('.wrap').css('height', h);
+$('.shade').css('height', h);
 $('.col').hover(function(){
 	$(this).find('.shade').css('display','none');
 	$(this).addClass('col-bp');
@@ -14,8 +14,8 @@ $('.col').hover(function(){
 
 	
 
-//$(window).resize(function() {
-//	var h_1 = $(window).height();
-//	$('.wrap').css('height', h_1);
-//	$('.shade').css('height', h_1);
-//});
+$(window).resize(function() {
+	var h_1 = $(window).height();
+	$('.wrap').css('height', h_1);
+	$('.shade').css('height', h_1);
+});
