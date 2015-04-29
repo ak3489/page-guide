@@ -8,11 +8,11 @@ html {font-size: 16px;overflow: hidden;}
 body {margin: 0;font: 1rem/1.5 "微软雅黑","PT Sans", sans-serif;color: #5a5a5a;overflow: hidden;width: 100%;*cursor: default;}
 h1, h2, h3, h4 {margin: 0 0 .5rem;font-weight: normal;line-height: 1;color: #2a2a2a;letter-spacing: -.05em;}
 h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
+h2 { font-size: 1.3rem;text-align: center;margin-top: 1rem;color:#fff;}
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.25rem }
 p {margin: 0 0 0.1rem;}
-ul li {margin-bottom: .25rem;}
+ul li {margin-bottom: .25rem;list-style: none;}
 p:last-child,ul:last-child,blockquote:last-child{margin-bottom: 0;}
 .col {position: relative;transition: background-position .5s;}
 .page1 .col{background: url(../img/wallhaven-82818.jpg);}
@@ -41,8 +41,7 @@ p:last-child,ul:last-child,blockquote:last-child{margin-bottom: 0;}
 
 .wrap {display: table;table-layout: fixed;width: 100%;height: 100%;background: #ffa800;}
 .shade{width: 100%;height: inherit;background: rgba(0,0,0,.6);position: absolute;left: 0;top: 0;}/*遮罩*/
-h2{font-size: 1.5rem;color: #fff;}
-p span{font-size: .7rem;display: block;}/*链接说明*/
+p span{font-size: .7rem;display: block;color: #aaa;}/*链接说明*/
 /*a style*/
 a{font-size: .8rem;color: #08c;position: relative;font-weight: 600;display: inline-block;text-decoration: none;
   -webkit-transition: all .3s linear;
