@@ -5,6 +5,7 @@
 
 html {
   font-size: 16px;
+  overflow: hidden;
 }
 @media (min-width: 48em) {
   html {
@@ -16,8 +17,10 @@ body {
   margin: 0;
   font: 1rem/1.5 "微软雅黑","PT Sans", sans-serif;
   color: #5a5a5a;
+  overflow: hidden;
+  width: 100%;
+  *cursor: default;
 }
-
 
 h1, h2, h3, h4 {
   margin: 0 0 .5rem;
@@ -68,11 +71,13 @@ blockquote:last-child{
   position: relative;
   transition: background-position .5s;
 }
-.wrap:nth-child(1) .col:nth-child(1){background: url(../img/wallhaven-82818.jpg);}
-.wrap:nth-child(1) .col:nth-child(2){background: url(../img/wallhaven-82818.jpg) -167px 0;}
-.wrap:nth-child(1) .col:nth-child(3){background: url(../img/wallhaven-82818.jpg) -260px 0;}
-.wrap:nth-child(1) .col:nth-child(4){background: url(../img/wallhaven-82818.jpg) -433px 0;}
-.wrap:nth-child(1) .col:nth-child(5){background: url(../img/wallhaven-82818.jpg) -812px 0;}
+.page1 .col{background: url(../img/wallhaven-82818.jpg);}
+.col:nth-child(1){background-position: 0 0;}
+.col:nth-child(2){background-position: -167px 0;}
+.col:nth-child(3){background-position: -260px 0;}
+.col:nth-child(4){background-position: -433px 0;}
+.col:nth-child(5){background-position: -812px 0;}
+.col{background: url(../img/wallhaven-12860.jpg);}
 .col-bp{background-position: -130px 0!important;}
 .col p {
   max-width: 40rem;
@@ -117,17 +122,6 @@ blockquote:last-child{
 h2{font-size: 1.5rem;color: #fff;}
 p span{font-size: .7rem;display: block;}/*链接说明*/
 
-
-
-
-
-
-
-
-
-
-
-
 /*a style*/
 a{
   font-size: .8rem;
@@ -170,10 +164,19 @@ a:after{
 a:hover:before, a:hover:after{
   width: 100%;
 }
-/*a style*/
+/*a style end*/
 
-
-
+/*fullpage*/
+#pageContain { overflow: hidden;}
+.page { display: none; width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;}
+.contain { width: 100%; height: 100%; display: none; position: relative; z-index: 0;}
+.current .contain, .slide .contain { display: table;}
+.current { display: table; z-index: 1;}
+.slide { display: table; z-index: 2;}
+.swipe { display: table; z-index: 3; transition-duration: 0ms !important; -webkit-transition-duration: 0ms !important;}
+#navBar { z-index: 3; position: absolute; top: 30%; right: 3%;}
+#navBar .active { background: #ccc;}
+#navBar li { cursor: pointer; margin-bottom: 10px; transition: all .7s ease; border-radius: 50%; line-height: 40px; text-align: center; width: 40px; height: 40px;list-style: none;}
 
 
 

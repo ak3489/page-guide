@@ -11,6 +11,9 @@ $('.col').hover(function(){
 	$(this).find('p').css({'background':'none','margin-right':'2em'})
 });
 
+
+	
+
 $(window).resize(function() {
 	var h_1 = $(window).height();
 	$('.wrap').css('height', h_1);
